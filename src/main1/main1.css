@@ -1,0 +1,77 @@
+.main1{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.box1{
+    width: 45%;
+    float: left;
+    margin-left: 14px;
+    height: 68vh;
+}
+.box1 img{
+    width: 100%;
+    float: left;
+    margin: 5px;
+    height: 68vh;
+}
+.box2{
+    width: 26%;
+    margin-top: 5px;
+    float: left;
+    margin-left: 13px;
+    height: 34vh;
+}
+.box2 img{
+    width: 98%;
+    height: 34vh;
+}
+.box3{
+    width: 26%;
+    margin-top: 5px;
+    float: left;
+    height: 34vh;
+}
+.box3 img{
+    width: 98%;
+    height: 34vh;
+}
+.box4{
+    width: 52.5%;
+    margin-top: 5px;
+    float: left;
+    margin-left: 13px;
+    height: 34vh;
+}
+.box4 img{
+    width: 98%;
+    height: 33.4vh;
+}
+.boxes{
+    width: 100%;
+    margin-left: 15px;
+}
+.box5{
+    width: 24%;
+    /* margin-top: 4px; */
+    float: left;
+    height: 20vh;
+    margin:5px;
+    margin-right: 0px;
+    background-color: rgb(238, 248, 238);
+}
+.box5 img{
+    width: 50%;
+    height: 20vh;
+    float: left;
+}
+.box5 p{
+    width: 40%;
+    height: 20vh;
+    margin: 5px;
+    text-align: left;
+    margin-left: 10px;
+    float: left;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    word-spacing: 1px;
+    font-size: 14px;
+}
