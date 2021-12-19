@@ -8,11 +8,11 @@ function Main1(){
     const getNewsData = async()=>{
         
             const res=await fetch(`
-            https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=2dca8b21038b44c5bb588850fa026dc6`);
+            https://gnews.io/api/v4/search?q=india&token=7995e8afd133ac404c076193e126e981`);
             const actdata=await res.json();
             setdata(actdata.articles);
 
-            const cres=await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=c617e3d07d1e4eed87c136a6b99630be`);
+            const cres=await fetch(`https://gnews.io/api/v4/search?q=news&token=7995e8afd133ac404c076193e126e981`);
             const cactdata=await cres.json();
             setcdata(cactdata.articles);
             
@@ -43,7 +43,7 @@ function Main1(){
                 data.map((curr,ind)=>{
                     return(
                         <div className="box5">
-                        <img src={curr.urlToImage} ></img>
+                        <img src={curr.image} ></img>
                             <p>{curr.title}</p>
                         </div>
                     );
@@ -55,7 +55,7 @@ function Main1(){
                 cdata.map((curr,ind)=>{
                     return(
                         <div className="box5">
-                        <img src={curr.urlToImage} ></img>
+                        <img src={curr.image} ></img>
                             <p>{curr.title}</p>
                         </div>
                     );

@@ -8,11 +8,11 @@ function National(){
     const getNewsData = async()=>{
         
         
-            const res=await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=c617e3d07d1e4eed87c136a6b99630be`);
+            const res=await fetch(`https://gnews.io/api/v4/search?q=india&token=7995e8afd133ac404c076193e126e981`);
             const actdata=await res.json();
             setdata(actdata.articles);
             const cres=await fetch(`
-        https://newsapi.org/v2/everything?q=india&from=2021-11-19&sortBy=publishedAt&apiKey=2dca8b21038b44c5bb588850fa026dc6`);
+            https://gnews.io/api/v4/search?q=indian politics&token=7995e8afd133ac404c076193e126e981`);
         const cactdata=await cres.json();
         setcdata(cactdata.articles);
         
@@ -42,7 +42,7 @@ function National(){
                 data.map((curr,ind)=>{
                     return(
                         <div className="box5">
-                <img src={curr.urlToImage}></img>
+                <img src={curr.image}></img>
                 <p>{curr.title}</p>
             </div>
                     );
@@ -57,7 +57,7 @@ function National(){
                 cdata.map((curr,ind)=>{
                     return(
                         <div className="box5">
-                <img src={curr.urlToImage}></img>
+                <img src={curr.image}></img>
                 <p>{curr.title}</p>
             </div>
                     );

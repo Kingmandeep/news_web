@@ -10,15 +10,15 @@ function Edu(){
         
         
         const res=await fetch(`
-        https://newsapi.org/v2/everything?q=sciences&from=2021-12-18&to=2021-12-18&sortBy=popularity&apiKey=2dca8b21038b44c5bb588850fa026dc6`);
+        https://gnews.io/api/v4/search?q=education&token=7995e8afd133ac404c076193e126e981`);
         const actdata=await res.json();
         setdata(actdata.articles);
         const cres=await fetch(`
-        https://newsapi.org/v2/everything?q=technology&from=2021-11-19&sortBy=publishedAt&apiKey=2dca8b21038b44c5bb588850fa026dc6`);
+        https://gnews.io/api/v4/search?q=space&token=7995e8afd133ac404c076193e126e981`);
         const cactdata=await cres.json();
         setcdata(cactdata.articles);
         const gres=await fetch(`
-        https://newsapi.org/v2/everything?q=solar&from=2021-11-19&sortBy=publishedAt&apiKey=2dca8b21038b44c5bb588850fa026dc6`);
+        https://gnews.io/api/v4/search?q=enviroment&token=7995e8afd133ac404c076193e126e981`);
         const gactdata=await gres.json();
         setgdata(gactdata.articles);
         
@@ -48,7 +48,7 @@ function Edu(){
                 data.map((curr,ind)=>{
                     return(
                         <div className="box5">
-                <img src={curr.urlToImage}></img>
+                <img src={curr.image}></img>
                 <p>{curr.title}</p>
             </div>
                     );
@@ -60,7 +60,7 @@ function Edu(){
                 gdata.map((curr,ind)=>{
                     return(
                         <div className="box5">
-                <img src={curr.urlToImage}></img>
+                <img src={curr.image}></img>
                 <p>{curr.title}</p>
             </div>
                     );
@@ -72,7 +72,7 @@ function Edu(){
                 cdata.map((curr,ind)=>{
                     return(
                         <div className="box5">
-                <img src={curr.urlToImage}></img>
+                <img src={curr.image}></img>
                 <p>{curr.title}</p>
             </div>
                     );
