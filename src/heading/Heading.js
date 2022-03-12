@@ -4,7 +4,7 @@ import React,{useState} from "react";
 import "./heading.css";
 import { NavLink } from 'react-router-dom';
 function Heading (){
-    var date=new Date().toLocaleDateString();
+    
     
     const [ctime,settime]=useState();
     const [cday,setday]=useState();
